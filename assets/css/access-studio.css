@@ -1,0 +1,261 @@
+body {
+    background: #050505;
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+
+.access-navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background: transparent;
+    transition: 0.4s;
+}
+
+.access-navbar.scrolled {
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.nav-logo {
+    height: 55px;
+}
+
+.access-navbar .nav-link {
+    color: #fff;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.access-navbar .nav-link:hover {
+    color: #C9A66B;
+}
+
+.cura-link {
+    border: 1px solid #C9A66B;
+    border-radius: 30px;
+    padding: 8px 20px !important;
+    color: #C9A66B !important;
+}
+
+.cura-link:hover {
+    background: #C9A66B;
+    color: #000 !important;
+}
+
+
+
+/* .hero-section {
+
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+}
+
+/* .hero-section::before{
+    content:'';
+    position:absolute;
+    width:700px;
+    height:700px;
+    background:radial-gradient(
+      rgba(201,166,107,.15),
+      transparent
+    );
+    left:-250px;
+    top:-200px;
+} */
+
+
+/*.hero-logo {
+    max-width:350px;
+    width:100%;
+    border-radius: 20px;
+}
+
+.tagline {
+    color: #C9A66B;
+    letter-spacing: 4px;
+}
+
+.hero-section h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.hero-section h1 span {
+    color: #C9A66B;
+}
+
+.hero-section p {
+    font-size: 20px;
+    color: #d0d0d0;
+} */
+
+.hero-section{
+    position:relative;
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+}
+
+.hero-video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:1;
+}
+
+.hero-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+    z-index:2;
+}
+
+.hero-content{
+    position:relative;
+    z-index:3;
+}
+
+.hero-logo{
+    max-width:350px;
+    width:100%;
+    border-radius:20px;
+}
+
+.hero-section h1{
+    font-size:90px;
+    font-weight:800;
+    line-height:1;
+    color:#fff;
+}
+
+.hero-section h1 span{
+    color:#C9A66B;
+}
+
+.tagline{
+    color:#C9A66B;
+    letter-spacing:5px;
+    font-size:14px;
+}
+
+.hero-section p{
+    color:#ddd;
+    font-size:22px;
+    max-width:700px;
+}
+
+.about-studio {
+    padding: 120px 0;
+    background: #0d0d0d;
+}
+
+.features-section {
+    padding: 120px 0;
+}
+
+.feature-card {
+    background: #141414;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.gallery-section {
+    padding: 120px 0;
+    background: #0d0d0d;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.section-title h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.why-access,
+.testimonial-section,
+.faq-section {
+    padding: 120px 0;
+    background: #050505;
+}
+
+.why-card {
+    background: #141414;
+    padding: 40px;
+    border-radius: 20px;
+    height: 100%;
+    border: 1px solid rgba(201, 166, 107, .15);
+}
+
+.experience-section {
+    padding: 120px 0;
+    background: #0d0d0d;
+}
+
+.experience-list {
+    margin-top: 30px;
+}
+
+.experience-list li {
+    margin-bottom: 10px;
+}
+
+.testimonial-card {
+    background: #141414;
+    padding: 30px;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.accordion-item {
+    background: #141414;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.accordion-button {
+    background: #141414;
+    color: white;
+}
+
+.accordion-body {
+    background: #1b1b1b;
+    color: #ddd;
+}
+
+.access-footer {
+    background: #000;
+    padding: 80px 0;
+}
+
+.access-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.access-footer li {
+    margin-bottom: 10px;
+}
