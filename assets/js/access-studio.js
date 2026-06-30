@@ -93,13 +93,13 @@ featureCards.forEach(card => {
 
 // Accordion
 
-    const faqItems = document.querySelectorAll(".faq-item");
+const faqItems = document.querySelectorAll(".faq-item");
 
-faqItems.forEach(item=>{
+faqItems.forEach(item => {
 
-const question=item.querySelector(".faq-question");
+    const question = item.querySelector(".faq-question");
 
-question.addEventListener("click",()=>{
+    question.addEventListener("click", () => {
 
         faqItems.forEach(other => {
 
@@ -113,48 +113,108 @@ question.addEventListener("click",()=>{
 
         });
 
-    item.classList.toggle("active");
+        item.classList.toggle("active");
 
-    const answer=item.querySelector(".faq-answer");
+        const answer = item.querySelector(".faq-answer");
 
-    if(item.classList.contains("active")){
+        if (item.classList.contains("active")) {
 
-        answer.style.maxHeight = answer.scrollHeight + "px";
+            answer.style.maxHeight = answer.scrollHeight + "px";
 
-}else{
+        } else {
 
-        answer.style.maxHeight = null;
+            answer.style.maxHeight = null;
 
-}
+        }
 
-});
+    });
 
 });
 
 // Scroll Animation
 
-const faqObserver=new IntersectionObserver((entries)=>{
+const faqObserver = new IntersectionObserver((entries) => {
 
-        entries.forEach(entry => {
+    entries.forEach(entry => {
 
-            if (entry.isIntersecting) {
+        if (entry.isIntersecting) {
 
-                entry.target.classList.add("show");
+            entry.target.classList.add("show");
 
-            }
+        }
 
-        });
+    });
 
-},{
-        threshold:.2
+}, {
+    threshold: .2
 });
 
-faqItems.forEach(item=>{
+faqItems.forEach(item => {
 
-        faqObserver.observe(item);
+    faqObserver.observe(item);
 
 });
 
+
+
+
+// Footer Animation
+
+const footerItems = document.querySelectorAll(
+    '.footer-logo, .footer-links, .footer-contact, .social-icons, .whatsapp-btn'
+);
+
+const footerObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("footer-show");
+
+        }
+
+    });
+
+}, {
+    threshold: .2
+});
+
+footerItems.forEach(item => {
+
+    footerObserver.observe(item);
+
+});
+
+// Scroll To Top
+
+const scrollBtn = document.getElementById("scrollTop");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 400) {
+
+        scrollBtn.classList.add("active");
+
+    } else {
+
+        scrollBtn.classList.remove("active");
+
+    }
+
+});
+
+scrollBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
 
 
 

@@ -2270,3 +2270,143 @@ RESPONSIVE
     }
 
 }
+
+/*=====================================
+PREMIUM TOP BORDER
+=====================================*/
+
+.footer-section {
+
+    border-top: 4px solid transparent;
+    border-image: linear-gradient(90deg, #6C63FF, #FFC107, #6C63FF);
+    border-image-slice: 1;
+
+}
+
+/*=====================================
+FOOTER FADE ANIMATION
+=====================================*/
+
+.footer-logo,
+.footer-links,
+.footer-contact,
+.social-icons,
+.whatsapp-btn {
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .8s ease;
+
+}
+
+.footer-show {
+
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+
+}
+
+/*=====================================
+SOCIAL ICON SCALE
+=====================================*/
+
+.social-icons a:hover {
+
+    transform: translateY(-6px) scale(1.1);
+
+}
+
+/*=====================================
+LINK HOVER
+=====================================*/
+
+.footer-links li {
+
+    cursor: pointer;
+
+}
+
+.footer-links li:hover i {
+
+    transform: translateX(5px);
+
+}
+
+.footer-links li i {
+
+    transition: .3s;
+
+}
+
+/*=====================================
+CONTACT ICON
+=====================================*/
+
+.contact-item:hover i {
+
+    background: #6C63FF;
+    color: #fff;
+    transform: rotate(360deg);
+
+}
+
+.contact-item i {
+
+    transition: .5s;
+
+}
+
+/*=====================================
+SCROLL TO TOP BUTTON
+=====================================*/
+
+.scroll-top {
+
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #6C63FF;
+
+    color: #fff;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 15px 30px rgba(108, 99, 255, .30);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .4s;
+
+    z-index: 999;
+
+}
+
+.scroll-top.active {
+
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.scroll-top:hover {
+
+    transform: translateY(-5px);
+
+    background: #563dff;
+
+}
