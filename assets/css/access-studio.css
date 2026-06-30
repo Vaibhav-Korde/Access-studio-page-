@@ -2160,7 +2160,7 @@ POLICY
 RESPONSIVE
 =====================================*/
 
-@media(max-width:992px) {
+/* @media(max-width:992px) {
 
     .footer-section {
 
@@ -2267,6 +2267,41 @@ RESPONSIVE
         flex-wrap: wrap;
         justify-content: center;
 
+    }
+
+} */
+
+@media(max-width:992px) {
+
+    .footer-section {
+        text-align: left;
+    }
+
+    .footer-title::after {
+        left: 0;
+        transform: none;
+    }
+
+    .footer-links li {
+        justify-content: flex-start;
+    }
+
+    .contact-item {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+
+    .whatsapp-btn {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
     }
 
 }
