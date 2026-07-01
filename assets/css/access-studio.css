@@ -334,7 +334,9 @@ body {
 
 .about-title span {
 
-    color: #6c63ff;
+    color: #000000;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif
 
 }
 
@@ -597,13 +599,13 @@ Heading
 
 }
 
-.section-title span {
+/* .section-title span {
 
     background: linear-gradient(90deg, #6C63FF, #A855F7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-}
+} */
 
 .section-subtitle {
 
@@ -1487,12 +1489,12 @@ Heading
 .faq-badge {
 
     display: inline-block;
-    padding: 12px 30px;
+    padding: 7px 50px;
     border-radius: 40px;
     background: linear-gradient(135deg, #6C63FF, #8E5BFF);
     color: #fff;
-    font-size: 13px;
-    letter-spacing: 2px;
+    font-size: 30px;
+    letter-spacing: 8px;
     font-weight: 600;
 
 }
@@ -1856,6 +1858,7 @@ Logo
     font-size: 17px;
     line-height: 1.9;
     margin-top: 20px;
+    left: -20px;
 
 }
 
